@@ -9,6 +9,8 @@ npm 发布一个包的几种方式
     - babel-node 代替 node，能够直接运行 ES6 代码，文件不需要转码
     - babel-polyfill 转换新语法的 API
   - webpack + babel-loader
+  如果在 webpack 的 module loader 里面配置了 presets, 外层就不需要配置 `.babelrc` 了，外层的优先级更高。
+  (将之前配置过的 `.babelrc` 放到了 test 文件夹下，做备份)
 
 [Babel Loader](https://github.com/babel/babel-loader)
 Babel-Loader 使用 Babel 和 Webpack 转换 JS 文件
