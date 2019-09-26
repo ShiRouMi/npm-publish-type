@@ -1,3 +1,2 @@
-import add from '../es6'
-
-console.log(add(1,2))
+var val = require('../lib/syntax').default
+console.log(val)
